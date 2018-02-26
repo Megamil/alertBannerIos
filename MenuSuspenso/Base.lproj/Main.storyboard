@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,11 +13,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MenuSuspenso" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0aG-xr-sJW">
+                                <rect key="frame" x="30" y="617" width="315" height="30"/>
+                                <state key="normal" title="Info 2"/>
+                                <connections>
+                                    <action selector="showInfo2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9WZ-Ui-963"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIb-dG-agr">
+                                <rect key="frame" x="30" y="567" width="315" height="30"/>
+                                <state key="normal" title="Info 1"/>
+                                <connections>
+                                    <action selector="showInfo1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lGM-0e-UcH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJr-VF-rsJ">
+                                <rect key="frame" x="30" y="517" width="315" height="30"/>
+                                <state key="normal" title="Warning"/>
+                                <connections>
+                                    <action selector="showWarning:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KOR-P4-RUa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hS3-s1-jEw">
+                                <rect key="frame" x="30" y="467" width="315" height="30"/>
+                                <state key="normal" title="Danger"/>
+                                <connections>
+                                    <action selector="showDanger:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j82-B6-axu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D28-DZ-F3A">
+                                <rect key="frame" x="30" y="417" width="315" height="30"/>
+                                <state key="normal" title="Success"/>
+                                <connections>
+                                    <action selector="showSuccess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XHP-N5-b0Q"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qIb-dG-agr" firstAttribute="top" secondItem="TJr-VF-rsJ" secondAttribute="bottom" constant="20" id="3gY-WZ-3Uc"/>
+                            <constraint firstItem="hS3-s1-jEw" firstAttribute="top" secondItem="D28-DZ-F3A" secondAttribute="bottom" constant="20" id="3mh-tV-LHR"/>
+                            <constraint firstItem="D28-DZ-F3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="3xn-93-acl"/>
+                            <constraint firstItem="TJr-VF-rsJ" firstAttribute="top" secondItem="hS3-s1-jEw" secondAttribute="bottom" constant="20" id="5gE-ic-s9n"/>
+                            <constraint firstItem="0aG-xr-sJW" firstAttribute="top" secondItem="qIb-dG-agr" secondAttribute="bottom" constant="20" id="6JI-VO-N7o"/>
+                            <constraint firstItem="0aG-xr-sJW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="CyH-Kz-jSP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qIb-dG-agr" secondAttribute="trailing" constant="30" id="RhP-WS-7uW"/>
+                            <constraint firstItem="TJr-VF-rsJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bwa-vz-TkJ"/>
+                            <constraint firstItem="hS3-s1-jEw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bzu-RF-V6e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0aG-xr-sJW" secondAttribute="bottom" constant="20" id="fJI-bj-xDt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="D28-DZ-F3A" secondAttribute="trailing" constant="30" id="jx8-K1-YcF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TJr-VF-rsJ" secondAttribute="trailing" constant="30" id="kjc-aI-EF0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0aG-xr-sJW" secondAttribute="trailing" constant="30" id="m4u-YT-ejc"/>
+                            <constraint firstItem="qIb-dG-agr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="pYi-ee-oab"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hS3-s1-jEw" secondAttribute="trailing" constant="30" id="rdI-t2-zeq"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
