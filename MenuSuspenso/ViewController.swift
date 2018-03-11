@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     @objc func closeView() {
-        print("marcola")
+        print("Fechar Menu")
     }
     
     func alertBanner(backgroudColor: UIColor, textColor: UIColor, titleString: String, descriptionString: String, delayDuration: Double) {
@@ -32,10 +32,11 @@ extension UIViewController {
         notificationView.isUserInteractionEnabled = true
         
         //Add View
-        //self.view.addSubview(notificationView)
+        self.view.addSubview(notificationView)
         
         //Above navigation
         UIApplication.shared.keyWindow?.addSubview(notificationView)
+        self.view.window?.windowLevel = UIWindowLevelStatusBar + 1
         
         let swipeGesture = UITapGestureRecognizer(target: self, action: #selector(closeView))
         swipeGesture.numberOfTapsRequired = 1
@@ -48,8 +49,7 @@ extension UIViewController {
         title.textAlignment = NSTextAlignment.center
         title.text = titleString
         title.isUserInteractionEnabled = true
-        title.addGestureRecognizer(swipeGesture)
-        notificationView.addSubview(title)
+        //notificationView.addSubview(title)
         
         //Add Description
         let description = UILabel(frame: CGRect(x:0, y:0, width:widthNotification, height:20))
@@ -61,8 +61,7 @@ extension UIViewController {
         description.adjustsFontSizeToFitWidth = true
         description.sizeToFit()
         description.isUserInteractionEnabled = true
-        description.addGestureRecognizer(swipeGesture)
-        notificationView.addSubview(description)
+        //notificationView.addSubview(description)
         
         heightNotification = Int(description.frame.height + title.frame.height + 30)
         
@@ -79,6 +78,7 @@ extension UIViewController {
                 print("Finish all animation")
                 //Delete all subviews
                 notificationView.removeFromSuperview()
+                self.view.window?.windowLevel = UIWindowLevelStatusBar - 1
             })
         })
         
@@ -91,6 +91,19 @@ extension UIViewController {
 
 
 class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        var view_ = UIView()
+        view_ = UIView(frame: CGRect(x: 80, y: 80, width: 100, height: 80))
+        view_.backgroundColor = .blue
+        
+        self.view.addSubview(view_)
+        
+        let swipeGesture = UITapGestureRecognizer(target: self, action: #selector(closeView))
+        swipeGesture.numberOfTapsRequired = 1
+        view_.addGestureRecognizer(swipeGesture)
+        
+    }
     
     @IBAction func showSuccess(_ sender: Any) {
         print("Call showSuccess with delay 4 seconds")
