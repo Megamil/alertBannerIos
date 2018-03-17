@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  MenuSuspenso
+//  alertBanner
 //
 //  Created by Eduardo dos santos on 23/02/2018.
 //  Copyright © 2018 Eduardo dos santos. All rights reserved.
@@ -49,7 +49,7 @@ extension UIViewController {
         title.textAlignment = NSTextAlignment.center
         title.text = titleString
         title.isUserInteractionEnabled = true
-        //notificationView.addSubview(title)
+        notificationView.addSubview(title)
         
         //Add Description
         let description = UILabel(frame: CGRect(x:0, y:0, width:widthNotification, height:20))
@@ -61,7 +61,7 @@ extension UIViewController {
         description.adjustsFontSizeToFitWidth = true
         description.sizeToFit()
         description.isUserInteractionEnabled = true
-        //notificationView.addSubview(description)
+        notificationView.addSubview(description)
         
         heightNotification = Int(description.frame.height + title.frame.height + 30)
         
@@ -86,22 +86,19 @@ extension UIViewController {
     
 }
 
-
-
-
-
 class ViewController: UIViewController {
     
     override func viewDidLoad() {
-        var view_ = UIView()
-        view_ = UIView(frame: CGRect(x: 80, y: 80, width: 100, height: 80))
-        view_.backgroundColor = .blue
-        
-        self.view.addSubview(view_)
-        
-        let swipeGesture = UITapGestureRecognizer(target: self, action: #selector(closeView))
-        swipeGesture.numberOfTapsRequired = 1
-        view_.addGestureRecognizer(swipeGesture)
+//      Testando uma view avulsa e o tapgesture
+//        var view_ = UIView()
+//        view_ = UIView(frame: CGRect(x: 80, y: 80, width: 100, height: 80))
+//        view_.backgroundColor = .white
+//
+//        self.view.addSubview(view_)
+//
+//        let swipeGesture = UITapGestureRecognizer(target: self, action: #selector(closeView))
+//        swipeGesture.numberOfTapsRequired = 1
+//        view_.addGestureRecognizer(swipeGesture)
         
     }
     

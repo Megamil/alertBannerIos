@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		591D73912040E88E009322A2 /* MenuSuspenso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MenuSuspenso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		591D73912040E88E009322A2 /* alertBanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = alertBanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		591D73942040E88E009322A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		591D73962040E88E009322A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		591D73992040E88E009322A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -38,7 +38,7 @@
 		591D73882040E88E009322A2 = {
 			isa = PBXGroup;
 			children = (
-				591D73932040E88E009322A2 /* MenuSuspenso */,
+				591D73932040E88E009322A2 /* alertBanner */,
 				591D73922040E88E009322A2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +46,12 @@
 		591D73922040E88E009322A2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				591D73912040E88E009322A2 /* MenuSuspenso.app */,
+				591D73912040E88E009322A2 /* alertBanner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		591D73932040E88E009322A2 /* MenuSuspenso */ = {
+		591D73932040E88E009322A2 /* alertBanner */ = {
 			isa = PBXGroup;
 			children = (
 				591D73942040E88E009322A2 /* AppDelegate.swift */,
@@ -61,15 +61,15 @@
 				591D739D2040E88E009322A2 /* LaunchScreen.storyboard */,
 				591D73A02040E88E009322A2 /* Info.plist */,
 			);
-			path = MenuSuspenso;
+			path = alertBanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		591D73902040E88E009322A2 /* MenuSuspenso */ = {
+		591D73902040E88E009322A2 /* alertBanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 591D73A32040E88E009322A2 /* Build configuration list for PBXNativeTarget "MenuSuspenso" */;
+			buildConfigurationList = 591D73A32040E88E009322A2 /* Build configuration list for PBXNativeTarget "alertBanner" */;
 			buildPhases = (
 				591D738D2040E88E009322A2 /* Sources */,
 				591D738E2040E88E009322A2 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = MenuSuspenso;
-			productName = MenuSuspenso;
-			productReference = 591D73912040E88E009322A2 /* MenuSuspenso.app */;
+			name = alertBanner;
+			productName = alertBanner;
+			productReference = 591D73912040E88E009322A2 /* alertBanner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +100,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 591D738C2040E88E009322A2 /* Build configuration list for PBXProject "MenuSuspenso" */;
+			buildConfigurationList = 591D738C2040E88E009322A2 /* Build configuration list for PBXProject "alertBanner" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +113,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				591D73902040E88E009322A2 /* MenuSuspenso */,
+				591D73902040E88E009322A2 /* alertBanner */,
 			);
 		};
 /* End PBXProject section */
@@ -276,9 +276,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8T5Q694LC;
-				INFOPLIST_FILE = MenuSuspenso/Info.plist;
+				INFOPLIST_FILE = alertBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = megamil.net.MenuSuspenso;
+				PRODUCT_BUNDLE_IDENTIFIER = megamil.net.alertBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -291,9 +291,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8T5Q694LC;
-				INFOPLIST_FILE = MenuSuspenso/Info.plist;
+				INFOPLIST_FILE = alertBanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = megamil.net.MenuSuspenso;
+				PRODUCT_BUNDLE_IDENTIFIER = megamil.net.alertBanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -303,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		591D738C2040E88E009322A2 /* Build configuration list for PBXProject "MenuSuspenso" */ = {
+		591D738C2040E88E009322A2 /* Build configuration list for PBXProject "alertBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				591D73A12040E88E009322A2 /* Debug */,
@@ -312,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		591D73A32040E88E009322A2 /* Build configuration list for PBXNativeTarget "MenuSuspenso" */ = {
+		591D73A32040E88E009322A2 /* Build configuration list for PBXNativeTarget "alertBanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				591D73A42040E88E009322A2 /* Debug */,

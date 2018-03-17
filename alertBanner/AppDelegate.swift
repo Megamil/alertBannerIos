@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  MenuSuspenso
+//  alertBanner
 //
 //  Created by Eduardo dos santos on 23/02/2018.
 //  Copyright © 2018 Eduardo dos santos. All rights reserved.

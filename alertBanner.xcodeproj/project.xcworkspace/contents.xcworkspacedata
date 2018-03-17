@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MenuSuspenso.xcodeproj">
+      location = "self:/Volumes/Backup/Desenvolvimento (Exemplos)/iOS/alertBanner/alertBanner.xcodeproj">
    </FileRef>
 </Workspace>
